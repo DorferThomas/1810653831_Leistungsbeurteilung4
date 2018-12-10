@@ -15,8 +15,6 @@ public class Book {
         private String isbn;
 
 
-
-
     public int getPages () {
             return this.pages;
         }

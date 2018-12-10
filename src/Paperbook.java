@@ -1,9 +1,11 @@
 import java.util.Date;
 
-
+//Wenn i  LOL: https://www.java-forum.org/thema/was-sind-attribute.66512/
 public class Paperbook extends Book {
+
     Paperbook(int pages, Date released, String title, String isbn, String series, String month) {
         super(pages, released, title, isbn);
+        //this. verwendet, damit die übergebenen Attribute der Main auf die private Attribute übergeben werden.
         this.released = released ;
         this.pages = pages;
         this.title = title;
@@ -18,6 +20,8 @@ public class Paperbook extends Book {
         private String title;
         private String isbn;
 
+
+        //Getter und Setter für alle Attribute erstellt (Kapselung)
         public void setSeries(String param){series=param;}
         public String getSeries() {return series; }
 
