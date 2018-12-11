@@ -9,6 +9,9 @@ public class Book {
         this.isbn = isbn;
     }
 
+    //Leeren Konstruktor erstellt, damit man auch
+    Book(){}
+
         private Date released;
         private int pages;
         private String title;
